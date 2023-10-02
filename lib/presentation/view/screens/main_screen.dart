@@ -78,36 +78,39 @@ class _MainScreenState extends State<MainScreen> {
                 SizedBox(
                   height: context.height * 0.1,
                 ),
-                Stack(
-                  alignment: const Alignment(0, -5),
-                  children: [
-                    Card(
-                      color: AppColors.white,
-                      child: SizedBox(
-                        width: context.width * 0.40,
-                        height: context.height * 0.2,
-                        child: Padding(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: [
-                              Text(
-                                "Saturn",
-                                style: getMediumStyle(
-                                    color: AppColors.black, fontSize: 20),
-                              )
-                            ],
+                InkWell(
+                  onTap: () {},
+                  child: Stack(
+                    alignment: const Alignment(0, -5),
+                    children: [
+                      Card(
+                        color: AppColors.white,
+                        child: SizedBox(
+                          width: context.width * 0.40,
+                          height: context.height * 0.2,
+                          child: Padding(
+                            padding: const EdgeInsets.all(20.0),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                Text(
+                                  "Saturn",
+                                  style: getMediumStyle(
+                                      color: AppColors.black, fontSize: 20),
+                                )
+                              ],
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 150,
-                      child: Image.asset(
-                        "assets/images/saturn.png",
-                      ),
-                    )
-                  ],
+                      SizedBox(
+                        height: 150,
+                        child: Image.asset(
+                          "assets/images/saturn.png",
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ],
             ),
