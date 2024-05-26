@@ -24,7 +24,7 @@ class _EarthScreenState extends State<EarthScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const EarthModel(),
+            const PlanetView(),
             SizedBox(
               height: context.height * 0.02,
             ),

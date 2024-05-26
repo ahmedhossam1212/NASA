@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:model_viewer_plus/model_viewer_plus.dart';
 import 'package:nasa_project/core/utils/media_query_values.dart';
 
-class EarthModel extends StatelessWidget {
-  const EarthModel({super.key});
+class PlanetView extends StatelessWidget {
+  const PlanetView({super.key});
 
   @override
   Widget build(BuildContext context) {
